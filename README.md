@@ -1,6 +1,6 @@
 # Ansible Role: xhgui
 
-Installs xhgui.
+Installs [xhgui](https://github.com/perftools/xhgui): A graphical interface for XHProf data built on MongoDB.
 
 ## Role Variables
 
@@ -47,7 +47,7 @@ MIT / BSD
 
 ## Credits
 
-Thanks to [@akrabat](https://twitter.com/akrabat), [Jeff Geerling](http://jeffgeerling.com/) and [Kevin ARBOUIN](https://github.com/lesmyrmidons) for their work in this space which helped me create this role.
+Thanks to [Rob Allen](https://twitter.com/akrabat), [Jeff Geerling](http://jeffgeerling.com/) and [Kevin ARBOUIN](https://github.com/lesmyrmidons) for their work in this space which helped me create this role.
 
 ## Author Information
 
