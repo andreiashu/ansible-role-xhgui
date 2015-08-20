@@ -1,0 +1,12 @@
+---
+- name: Install XHGui
+  shell: export COMPOSER_HOME={{ xhgui_composer_path }} && composer global require 'perftools/xhgui=dev-master' creates={{ xhgui_composer_path }}/vendor/perftools/xhgui/composer.json
+
+- name: Set XHGui permisssions
+  file: path={{ xhgui_composer_path }}/vendor/perftools/xhgui/cache group=www-data mode=775
+
+- name: Configure XHGui
+  template: src=xhgui_config.php.j2 dest={{ xhgui_composer_path }}/vendor/perftools/xhgui/config/config.php owner=vagrant group=www-data mode=644
+
+- name: Index mongo for XHGui
+  script: xhgui_indexes.sh --some-arguments 1234 creates=/root/indexed_xhgui.txt

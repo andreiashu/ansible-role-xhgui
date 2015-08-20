@@ -1,0 +1,4 @@
+---
+xhgui_composer_path: /usr/local/composer
+# auto-remove records older than 2592000 seconds (30 days)
+xhgui_mongo_expire_records_after: 2592000
